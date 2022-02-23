@@ -30,8 +30,6 @@ console.log("**************************")
 
 console.log(productos)
 console.log(productos2[1])
-*/
-
 
 //controlando etiquetas
 
@@ -55,5 +53,20 @@ etiquetaimagen.src="img/a1.1.jpg"
 //4. cambiar el estilo de la etiqueta
 etiquetatitulo.classList.add("text-center") 
 etiquetatitulo.classList.add("text-danger") 
+*/
+
+
+
+//TIENDA
+let nombreproducto=["peluche","camisa","figura","mochila"]
+let precioproducto=[120000,80000,237000,90000]
+let productospromocion=[true,false]
+
+console.log(nombreproducto[0])
+
+
+
+
+
 
 
