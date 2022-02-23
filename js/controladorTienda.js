@@ -1,6 +1,6 @@
 //entradas problema
 //entrada == vriables == constantes
-
+/*
 let nombreproducto="peluche"
 let precioProducto=400000
 let pesoProducto= 18.5
@@ -20,6 +20,7 @@ let productos2=Array("peluche","camiseta","figuras","mochila")
 
 
 
+
 //salidas
 console.log("Bienvenido "+NOMBRE_CLIENTE)
 console.log("Esta seguro que desea comprar "+nombreproducto)
@@ -29,8 +30,30 @@ console.log("**************************")
 
 console.log(productos)
 console.log(productos2[1])
+*/
 
 
+//controlando etiquetas
 
+//1. crear una variable para guarda una etiqueta
+
+let etiquetatitulo = document.getElementById("titulo")
+console.log(etiquetatitulo)//una etiqueta es una referencia en memoria
+
+//2. como modificar el texto de una etiqueta.
+etiquetatitulo.textContent = "A"
+
+
+let etiquetainicio = document.getElementById("inicio")
+etiquetainicio.textContent = "Inicio"
+console.log(etiquetainicio)
+
+//3. controlando fotos
+let etiquetaimagen = document.getElementById("fotosection")
+etiquetaimagen.src="img/a1.1.jpg" 
+
+//4. cambiar el estilo de la etiqueta
+etiquetatitulo.classList.add("text-center") 
+etiquetatitulo.classList.add("text-danger") 
 
 
