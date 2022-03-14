@@ -1,3 +1,4 @@
+
 h2{
     text-transform:uppercase;
 }
@@ -11,16 +12,6 @@ body{
     color: #fff;
 }
 
-
-
-
-main{
-    background-color: rgb(17, 17, 17);
-    color: #fff;  
-}
-
-
-
 #rowfooter{
     background-color: rgb(236, 174, 16);
     color: black;
@@ -30,4 +21,7 @@ main{
     margin-left:200px ;
 }
 
-
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
