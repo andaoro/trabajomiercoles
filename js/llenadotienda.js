@@ -18,9 +18,7 @@ let productos=
 let fila=document.getElementById("filas")
 
 productos.forEach(function(producto){
-     console.log(producto.foto)
-     console.log(producto.nombre)
-     console.log(producto.precio)
+     
 
      //pintando etiquetas
      //div con la clase col
@@ -45,7 +43,7 @@ productos.forEach(function(producto){
      descripcion.classList.add("text-left")
      descripcion.textContent=producto.descripcion
      
-     let precio = document.createElement("h4")
+     let precio = document.createElement("h5")
      precio.classList.add("text-center")
      precio.classList.add("text-warning")
      precio.classList.add("number")
@@ -53,6 +51,7 @@ productos.forEach(function(producto){
 
      let comprar = document.createElement("button")
      comprar.classList.add("bg-success")
+     comprar.classList.add("btn")
      comprar.classList.add("text-light")
      comprar.textContent="Comprar"
 
@@ -68,3 +67,34 @@ productos.forEach(function(producto){
      filas.appendChild(columna)
 })
 
+
+let contenedorTienda=document.getElementById("filas")
+contenedorTienda.addEventListener("click",function(evento){
+     
+     if(evento.target.classList.contains("btn")){
+
+          console.log(evento.target.parentElement.querySelector("h4"))
+
+
+          let modalinfo = new bootstrap.Modal(document.getElementById('modalinfor'))
+          let nombre = evento.target.parentElement.querySelector("h4").textContent
+
+          let fotoinfo=document.getElementById("fotoinfo")
+          fotoinfo.src= evento.target.parentElement.querySelector("img").src
+
+          let titulofoto=document.getElementById("nombreinfo")
+          titulofoto.textContent=evento.target.parentElement.querySelector("h4").textContent
+          titulofoto.classList.add("text-dark")
+
+          let descripcioncinfo=document.getElementById("descripcioninfo")
+          descripcioncinfo.textContent=evento.target.parentElement.querySelector("p").textContent
+          descripcioncinfo.classList.add("text-dark")
+
+          let precioinfo=document.getElementById("precioinfo")
+          precioinfo.textContent=evento.target.parentElement.querySelector("h5").textContent
+          precioinfo.classList.add("text-warning")
+
+          modalinfo.show()
+          
+     }
+})
