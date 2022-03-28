@@ -64,7 +64,7 @@ productos.forEach(function(producto){
      tarjeta.appendChild(descripcion)
      tarjeta.appendChild(comprar)
      columna.appendChild(tarjeta)
-     filas.appendChild(columna)
+     fila.appendChild(columna)
 })
 
 
