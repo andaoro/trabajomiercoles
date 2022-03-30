@@ -22,12 +22,20 @@ main{
 
 
 #rowfooter{
-    background-color: rgb(160, 89, 31);
+    background-color: rgb(214, 211, 25);
     color: black;
 }
 
 #DP{
     margin-left:200px ;
 }
+
+#carrito{
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+
+
 
 
