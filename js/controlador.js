@@ -23,8 +23,8 @@ contenedorTienda.addEventListener("click",function(evento){
 
 //rutina añadir carrito
 let carrito=[]
-let añadir=document.getElementById("añadirc")
-añadir=addEventListener("click",function(){
+let anadir=document.getElementById("anadirc")
+anadir.addEventListener("click",function(){
     
     carrito.push(producto)
     console.log(carrito)
