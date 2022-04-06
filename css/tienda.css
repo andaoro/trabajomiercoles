@@ -4,7 +4,7 @@ h2{
 }
 
 #navbarSupportedContent{
-    margin-left: 50px;  
+    margin-left: 150px;  
 }
 
 body{
@@ -30,6 +30,11 @@ body{
     margin-top: 10px;
     margin-left: 20px;
     
+}
+
+input[type=number]{
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 

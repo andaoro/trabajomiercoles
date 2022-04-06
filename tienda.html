@@ -44,8 +44,8 @@
                   </li>
                  
                   <li class="nav-item" id="carrito">
-                    <a href=""><i class="bi bi-cart3"></i>
-                      <span class="position-absolute top-10 start-1z0 translate-middle badge rounded-pill bg-danger invisible" id="span">
+                    <a href="#"><i class="bi bi-cart3" id="vcarrito"></i>
+                      <span class="position-absolute top-10 start-1z0 translate-middle badge rounded-pill bg-danger invisible" id="pildora">
                         99+
                         
                       </span>
@@ -97,7 +97,8 @@
                     <p id="descripcioninfo"></p>
                     <div class="mb-3">
                       <label class="form-label">Cantidad</label>
-                      <input type="number" class="form-control" id="cantproducto">
+                      
+                      <input type="number" class="form-control" id="cantproducto" min="1" max="10" value="1" >
                     </div>
                   </div>
                 </div>
@@ -106,8 +107,33 @@
             </div>
 
             <div class="modal-footer">
+              <button type="button" class="btn btn-danger" id="limpiarc">Limpiar el carrito</button>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
               <button type="button" class="btn btn-primary" id="anadirc">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+    
+      <!-- Modal -->
+      <div class="modal fade" id="resumencompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Tienda Kimetsu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container" id="basecarro">
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Comprar</button>
             </div>
           </div>
         </div>
