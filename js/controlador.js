@@ -66,6 +66,7 @@ limpiarc.addEventListener("click",function(){
     carrito=[]
     let capsula=document.getElementById("pildora")    
     capsula.classList.add("invisible")
+    modalcompra.hide()
 
 })
 
@@ -97,12 +98,15 @@ botonvercarrito.addEventListener("click",function(){
         foto.classList.add("w-100", "img-fluid")
         foto.src=producto.foto
 
+        
+
         //padres e hijos
 
         columna1.appendChild(foto)
         columna2.appendChild(precio)
         fila.appendChild(columna1)
         fila.appendChild(columna2)
+       
         base.appendChild(fila)
     })
     
@@ -110,3 +114,5 @@ botonvercarrito.addEventListener("click",function(){
     modalcompra.show()
 
 })
+
+
