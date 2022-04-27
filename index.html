@@ -1,277 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda kimetsu-no-yaiba</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda kimetsu-no-yaiba</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__bounceInLeft">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="10%"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html" id="inicio">inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www3.animeflv.net/anime/kimetsu-no-yaiba" target="_blank">Ver Ahora</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tienda
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
-                      <li><a class="dropdown-item" href="tienda.html">Compra</a></li>
-                      
-                    </ul>
-                  </li>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__bounceInLeft">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="10%"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
 
-                  <li class="nav-item" id="carrito">
-                    <a href=""><i class="bi bi-cart3"></i>
-                      <span class="position-absolute top-10 start-1z0 translate-middle badge rounded-pill bg-danger invisible" id="span">
-                        99+
-                        
-                      </span>
-                    </a>
-                  </li>
-                  
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-    </header>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" id="inicio">inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www3.animeflv.net/anime/kimetsu-no-yaiba" target="_blank">Ver Ahora</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Registrar</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tienda
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="tienda.html">Compra</a></li>
 
-    <main>
-        <section>
-          <form>
-            <div class="mb-3">
-              <label class="form-label">Email</label>
-              <input type="email" class="form-control" id="email">
-            </div>
+              </ul>
+            </li>
 
-            <div class="mb-3">
-              <label class="form-label">password</label>
-              <input type="password" class="form-control" id="password">
-            </div>
+            <li class="nav-item" id="carrito">
+              <a href=""><i class="bi bi-cart3"></i>
+                <span class="position-absolute top-10 start-1z0 translate-middle badge rounded-pill bg-danger invisible"
+                  id="span">
+                  99+
 
-            <button type="submit" class="btn btn-primary w-20" id="botonregistro">Registrar</button>
+                </span>
+              </a>
+            </li>
 
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
           </form>
-        </section>
-
-
-
-
-
-
-        <img src="img/a8.jpg" alt="banner" class="w-100 img-fluid">
-        <section>
-            <div class="container mt-5 mb-5">
-                <div class="row">
-                    <div class="col-8 align-self-center">
-                        <h3>Kimetsu no yaiba</h3>
-                        <p>
-                          Kimetsu no Yaiba, también conocida bajo su nombre en inglés Demon Slayer , es una serie de manga escrita e ilustrada por Koyoharu Gotōge, cuya publicación comenzó el 15 de febrero de 2016 en la revista semanal Shūkan Shōnen Jump de la editorial Shūeisha. Una adaptación a serie de anime producida por el estudio Ufotable fue estrenada el 6 de abril de 2019 y finalizó el 28 de septiembre de ese mismo año. La continuación de la historia fue adaptada en formato de película y se llamó Kimetsu no Yaiba: Mugen Ressha-hen, se estrenó el 16 de octubre de 2020 en Japón, convirtiéndose en la película más taquillera en la historia de dicho país.​Una segunda temporada del anime y continuación de la película comenzó su emisión en el mes de noviembre de 2021.
-                          <br/>
-                          <br/>
-
-                          Para febrero de 2021, el manga cuenta con 23 volúmenes publicados y con 150 millones de copias en circulación, incluidas copias digitales, convirtiéndose así en una de las series de manga más vendidas de la historia.                        </p>
-
-                        
-
-                    </div>
-                    <div class="col-3">
-                        <img src="img/kny1.png" width="200px" alt="" class="animate__animated animate__backInRight w-100 img-fluid">
-                    </div>
-                </div>
-                <br>
-                <br>
-                <br>
-                <div class="principales">
-                  <h2>PERSONAS PRINCIPALES</h2>
-                  <br>
-                  <br>
-                  
-                  <div class="tanjiro">
-                    <h3>Kamado tanjiro</h3>
-                    <div class="row">
-                      <div class="col-3">
-                        <img src="img/kamado-tanjiro.png" alt="Tanjiro" class="img-fluid"  >
-                      </div>
-                      <div class="col-9 align-self-center">
-                        <p>
-                          Tanjiro Kamado es el protagonista principal de Kimetsu no Yaiba. Es un cazador de Demonios cuyo principal objetivo es encontrar al responsable de haber matado a su familia y convertido a su hermana Nezuko en un Demonio.
-                        </p>
-                        <h5>Personlidad</h5>
-                        <p>
-                          Tanjiro es amable por naturaleza y ha sido descrito por otros por alguien de ojos muy suaves. Tiene mucha determinación y no se rendirá una vez que tenga una meta que alcanzar; Un ejemplo es encontrar una cura para Nezuko. A pesar de que es relativamente fuerte por sí mismo, no se opone a pedir ayuda a otros cuando la necesita. Él es muy protector con sus amigos y más aún con su hermana menor. 
-                        </p>
-                        <h5>Habilidades</h5>
-                        <p>Tanjirō posee un sentido del olfato extremadamente agudo. Gracias a ello, puede detectar la presencia de Demonios o seres humanos en su alrededor, sin embargo gracias a su entrenamiento con Urokodaki, Tanjirō también puede oler las emociones de cualquier individuo, conociendo sus intenciones.</p>
-
-                        <p>
-                          Tanjiro aprendio el uso de la respiracion de agua gracias a urokodaki, es una de las respiraciones principales directamente derivados de la Respiración Solar. Se dice que es fácil de dominar,por eso es utilizada por la mayoría de los Cazadores de demonios y tambien la Danza del Dios del fuego o respiracion solar;
-                        </p>
-                      </div>
-                    </div>
-
-
-                    <br>
-                    <br><br><br>
-
-                    <div class="inosuke">
-                      <h3>Inosuke Hashibira</h3>
-                      <div class="row">
-                        
-                        <div class="col-9 align-self-center">
-                          <p>
-                            Inosuke Hashibira es uno de los personajes principales de la franquicia Kimetsu no Yaiba. Fue un Cazador de Demonios perteneciente al Cuerpo de Exterminio de Demonios, creador y único usuario conocido de la Respiración de la Bestia.
-                          </p>
-                          <h5>Personlidad</h5>
-                          <p>
-                            Inosuke era extremadamente temperamental, impulsivo, poco paciente y lleno de un orgullo desmezurado. Su orgullo era tal que incluso estaba dispuesto a pelear contra oponentes que eran técnicamente más fuertes que él. No era el tipo de persona que se detenía a pensar en la diferencia de niveles que existía entre él y su oponente, lo que a menudo lo ponía en serio peligro de morir. Esto ha ocurrido en diversas ocasiones como fue cuando se mostró convencido de poder vencer a las Lunas Superiores Seis, Daki y Gyutaro, luego de ser influenciado por las palabras de Tengen Uzui.
-                          </p>
-                          <h5>Habilidades</h5>
-                          <p>A raíz de vivir en las montañas prácticamente toda su vida, Inosuke había desarrollado un sentido del tacto bastante agudo. Gracias a este sentido tan desarrollado, era capaz de sentir hasta la menor vibración en el aire logrando así detectar tanto a enemigos como aliados.</p>
-  
-                          <p>
-                            Inosuke fue un espadachín muy poderoso y talentoso. Su estilo de combate consistía en la Respiración de la Bestia. A lo largo de su tiempo activo como cazador, se enfrentó a numerosos enemigos poderosos y miembros de las Doce Lunas Demoníacas.
-                          </p>
-                        </div>
-                        <div class="col-3">
-                          <img src="img/Inosuke.jpg" alt="Inosuke" class="img-fluid"  >
-                        </div>
-                      </div>
-
-                  </div>
-
-                  <br>
-                    <br><br><br>
-
-                  <div class="zenuko overflow-hidden" >
-                    <h3>Kamado Nezuko</h3>
-                    <div class="row">
-                      <div class="col-3">
-                        <img src="img/nezuko.png"  alt="Nezuko" class="img-fluid"  >
-                      </div>
-                      <div class="col-9 align-self-center">
-                        <p>
-                          Nezuko Kamado es la hermana menor de Tanjiro. Ella fue transformada en Demonio por Muzan Kibutsuji acompañando a Tanjiro en su viaje para volver a ser humana.
-                        </p>
-                        <h5>Personlidad</h5>
-                        <p>
-                          Cuando era humana, Nezuko era muy compasiva y amorosa con su familia, anteponiendo su propia seguridad preocupándose por su familia más que por ella misma, del mismo modo que Tanjirō se preocupa por ella. Después de que fuera convertida en Demonio por Muzan, buena parte de sus recuerdos como humana se perdieron, mayoritariamente los relacionados con su familia.
-                        </p>
-                        <p>No obstante, al transformarse en un Demonio completo, su lado más hostil y sádico sale a flote, torturando de forma despiadada a Daki, la Sexta Luna Superior.
-
-                        Todavía conserva sus emociones humanas, ya que se la ha visto llorar y ser feliz, pero en general parece más distante que sus cohortes humanas, así como más tranquila y menos maliciosa que la mayoría de los demonios.</p>
-                        <h5>Habilidades</h5>
-
-                          
-                        <p>Cuando Nezuko está bajo un estrés muy elevado por una situación de vida o muerte, se transforma en esta apariencia; en este estado, Nezuko aumenta sus rasgos físicos a como se vería si fuera adulta, con un cuerno saliendo del lado derecho de su cabeza, las venas de su cuerpo comienzan a brotar producto del bombeo de sangre y sobre su piel surgen unos tatuajes de unas ramas con hojas. En este estado la agresividad de Nezuko aumenta, como también lo hace su ansiedad por comer carne humana lo que la vuelve peligrosa.    
-                        </p>
-                        
-                        
-                      </div>
-                    </div>
-                    <br><br><br><br>
-                    <div class="inosuke">
-                      <h3 id="Titulozenitsu">Zenitsu</h3>
-                      <div class="row">
-                        
-                        <div class="col-9 align-self-center">
-                          <p>
-                            Zenitsu es un adolescente de piel clara que tiene el pelo corto, que antiguamente era de color negro, pero tras un accidente durante su entrenamiento cuando fue golpeado por un rayo, su pelo sufre una decoloración al volverse rubio con algunas extensiones de color naranja.
-                          </p>
-                          <h5>Personlidad</h5>
-                          <p>
-                            Por naturaleza, Zenitsu es cobarde. Siempre afirma que no tiene mucho tiempo de vida debido al peligroso trabajo de ser un Cazador de demonios. También es un poco mujeriego y le gusta flirtear con las chicas que él piensa que son lindas y les pide que se casen con él para su molestia.
-
-                            Zenitsu tiene baja autoestima, pero aún quiere cumplir con las expectativas que otros le establecieron. Sin embargo, tenía miedo constantemente y siempre lloraba y huía. Afirma que quiere vivir una vida modesta donde pueda ser útil para alguien.
-
-                            A pesar de toda su falta de estima, Zenitsu tiene un gran respeto y admiración hacia sus camaradas y su maestro fallecido, Jigoro Kuwajima. Su concentración y empuje para vengarlo lo ayudaron a superar su cobardía y sus dudas.
-                          </p>
-                          <h5>Habilidades</h5>
-                          <p>el sentido del oído de Zenitsu es lo suficientemente agudo como para escuchar hasta la más lejana vibración sonora en su alrededor. Conforme más pasa el tiempo, la audición de Zenitsu le permite incluso escuchar los pensamientos más ocultos de la persona.</p>
-  
-                          <p>
-                            La respiración del Rayo,Enseñado a Zenitsu por un ex Pilar, Jigoro Kuwajima (su Maestro). Esta técnica aumenta la fuerza y ​​la agilidad del usuario para igualar a la de un Demonio. Hay un total de seis posturas diferentes dentro de la respiración del rayo, pero Zenitsu no tenía tanto talento ya que solo pudo aprender el primero de los seis estilos, que se dice es el más básico. Sin embargo, Zenitsu ha logrado desarrollar una séptima postura por sí mismo en base a un entrenamiento dedicado para poder derrotar a su condiscípulo, Kaigaku.
-                          </p>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="col-3">
-                          <img src="img/zenitsu.png" alt="zenitsu" class="img-fluid"  id="fotozenitsu">
-                        </div>
-                      </div>
-                    
-
-
-                </div>
-              
-
-            </div>
-
-            </div>
-
-
-        
-            
-        </section>
-
-        
-        
-    </main>
- 
-      
-    <footer>
-      <div class="row" id="rowfooter">
-        
-        <div class="col-5" id="DP">
-          
-            <h5>Datos Personales</h5>
-            <p>Nombre: Andres David Orozco Manrique.</p>
-            
-            <p>correo: andaoro1@gmail.com</p>
-            <p>Desarrolador web</p>         
-        </div>
-
-        <div class="col-3">
-         
-            <h5>Contactanos</h5>
-            <p><a href="https://www.facebook.com/profile.php?id=100013394560683" target="_blank" >Facebook</a></p>
-            <p><a href="https://github.com/andaoro" target="_blank">Github</a></p>
-            <p>Telefono: 3012574242</p>
         </div>
       </div>
-    
-    </footer>
-    
+    </nav>
+  </header>
 
-    
+  <main>
 
-    
-    <script src="js/register.js" type="module"></script>
-    <script src="js/firebase.js" type="module"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-   
+
+
+
+
+
+
+    <img src="img/a8.jpg" alt="banner" class="w-100 img-fluid">
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-8 align-self-center">
+            <h3>Kimetsu no yaiba</h3>
+            <p>
+              Kimetsu no Yaiba, también conocida bajo su nombre en inglés Demon Slayer , es una serie de manga escrita e
+              ilustrada por Koyoharu Gotōge, cuya publicación comenzó el 15 de febrero de 2016 en la revista semanal
+              Shūkan Shōnen Jump de la editorial Shūeisha. Una adaptación a serie de anime producida por el estudio
+              Ufotable fue estrenada el 6 de abril de 2019 y finalizó el 28 de septiembre de ese mismo año. La
+              continuación de la historia fue adaptada en formato de película y se llamó Kimetsu no Yaiba: Mugen
+              Ressha-hen, se estrenó el 16 de octubre de 2020 en Japón, convirtiéndose en la película más taquillera en
+              la historia de dicho país.​Una segunda temporada del anime y continuación de la película comenzó su
+              emisión en el mes de noviembre de 2021.
+              <br />
+              <br />
+
+              Para febrero de 2021, el manga cuenta con 23 volúmenes publicados y con 150 millones de copias en
+              circulación, incluidas copias digitales, convirtiéndose así en una de las series de manga más vendidas de
+              la historia.
+            </p>
+
+
+
+          </div>
+          <div class="col-3">
+            <img src="img/kny1.png" width="200px" alt="" class="animate__animated animate__backInRight w-100 img-fluid">
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="principales">
+          <h2>PERSONAS PRINCIPALES</h2>
+          <br>
+          <br>
+
+          <div class="tanjiro">
+            <h3>Kamado tanjiro</h3>
+            <div class="row">
+              <div class="col-3">
+                <img src="img/kamado-tanjiro.png" alt="Tanjiro" class="img-fluid">
+              </div>
+              <div class="col-9 align-self-center">
+                <p>
+                  Tanjiro Kamado es el protagonista principal de Kimetsu no Yaiba. Es un cazador de Demonios cuyo
+                  principal objetivo es encontrar al responsable de haber matado a su familia y convertido a su hermana
+                  Nezuko en un Demonio.
+                </p>
+                <h5>Personlidad</h5>
+                <p>
+                  Tanjiro es amable por naturaleza y ha sido descrito por otros por alguien de ojos muy suaves. Tiene
+                  mucha determinación y no se rendirá una vez que tenga una meta que alcanzar; Un ejemplo es encontrar
+                  una cura para Nezuko. A pesar de que es relativamente fuerte por sí mismo, no se opone a pedir ayuda a
+                  otros cuando la necesita. Él es muy protector con sus amigos y más aún con su hermana menor.
+                </p>
+                <h5>Habilidades</h5>
+                <p>Tanjirō posee un sentido del olfato extremadamente agudo. Gracias a ello, puede detectar la presencia
+                  de Demonios o seres humanos en su alrededor, sin embargo gracias a su entrenamiento con Urokodaki,
+                  Tanjirō también puede oler las emociones de cualquier individuo, conociendo sus intenciones.</p>
+
+                <p>
+                  Tanjiro aprendio el uso de la respiracion de agua gracias a urokodaki, es una de las respiraciones
+                  principales directamente derivados de la Respiración Solar. Se dice que es fácil de dominar,por eso es
+                  utilizada por la mayoría de los Cazadores de demonios y tambien la Danza del Dios del fuego o
+                  respiracion solar;
+                </p>
+              </div>
+            </div>
+
+
+            <br>
+            <br><br><br>
+
+            <div class="inosuke">
+              <h3>Inosuke Hashibira</h3>
+              <div class="row">
+
+                <div class="col-9 align-self-center">
+                  <p>
+                    Inosuke Hashibira es uno de los personajes principales de la franquicia Kimetsu no Yaiba. Fue un
+                    Cazador de Demonios perteneciente al Cuerpo de Exterminio de Demonios, creador y único usuario
+                    conocido de la Respiración de la Bestia.
+                  </p>
+                  <h5>Personlidad</h5>
+                  <p>
+                    Inosuke era extremadamente temperamental, impulsivo, poco paciente y lleno de un orgullo
+                    desmezurado. Su orgullo era tal que incluso estaba dispuesto a pelear contra oponentes que eran
+                    técnicamente más fuertes que él. No era el tipo de persona que se detenía a pensar en la diferencia
+                    de niveles que existía entre él y su oponente, lo que a menudo lo ponía en serio peligro de morir.
+                    Esto ha ocurrido en diversas ocasiones como fue cuando se mostró convencido de poder vencer a las
+                    Lunas Superiores Seis, Daki y Gyutaro, luego de ser influenciado por las palabras de Tengen Uzui.
+                  </p>
+                  <h5>Habilidades</h5>
+                  <p>A raíz de vivir en las montañas prácticamente toda su vida, Inosuke había desarrollado un sentido
+                    del tacto bastante agudo. Gracias a este sentido tan desarrollado, era capaz de sentir hasta la
+                    menor vibración en el aire logrando así detectar tanto a enemigos como aliados.</p>
+
+                  <p>
+                    Inosuke fue un espadachín muy poderoso y talentoso. Su estilo de combate consistía en la Respiración
+                    de la Bestia. A lo largo de su tiempo activo como cazador, se enfrentó a numerosos enemigos
+                    poderosos y miembros de las Doce Lunas Demoníacas.
+                  </p>
+                </div>
+                <div class="col-3">
+                  <img src="img/Inosuke.jpg" alt="Inosuke" class="img-fluid">
+                </div>
+              </div>
+
+            </div>
+
+            <br>
+            <br><br><br>
+
+            <div class="zenuko overflow-hidden">
+              <h3>Kamado Nezuko</h3>
+              <div class="row">
+                <div class="col-3">
+                  <img src="img/nezuko.png" alt="Nezuko" class="img-fluid">
+                </div>
+                <div class="col-9 align-self-center">
+                  <p>
+                    Nezuko Kamado es la hermana menor de Tanjiro. Ella fue transformada en Demonio por Muzan Kibutsuji
+                    acompañando a Tanjiro en su viaje para volver a ser humana.
+                  </p>
+                  <h5>Personlidad</h5>
+                  <p>
+                    Cuando era humana, Nezuko era muy compasiva y amorosa con su familia, anteponiendo su propia
+                    seguridad preocupándose por su familia más que por ella misma, del mismo modo que Tanjirō se
+                    preocupa por ella. Después de que fuera convertida en Demonio por Muzan, buena parte de sus
+                    recuerdos como humana se perdieron, mayoritariamente los relacionados con su familia.
+                  </p>
+                  <p>No obstante, al transformarse en un Demonio completo, su lado más hostil y sádico sale a flote,
+                    torturando de forma despiadada a Daki, la Sexta Luna Superior.
+
+                    Todavía conserva sus emociones humanas, ya que se la ha visto llorar y ser feliz, pero en general
+                    parece más distante que sus cohortes humanas, así como más tranquila y menos maliciosa que la
+                    mayoría de los demonios.</p>
+                  <h5>Habilidades</h5>
+
+
+                  <p>Cuando Nezuko está bajo un estrés muy elevado por una situación de vida o muerte, se transforma en
+                    esta apariencia; en este estado, Nezuko aumenta sus rasgos físicos a como se vería si fuera adulta,
+                    con un cuerno saliendo del lado derecho de su cabeza, las venas de su cuerpo comienzan a brotar
+                    producto del bombeo de sangre y sobre su piel surgen unos tatuajes de unas ramas con hojas. En este
+                    estado la agresividad de Nezuko aumenta, como también lo hace su ansiedad por comer carne humana lo
+                    que la vuelve peligrosa.
+                  </p>
+
+
+                </div>
+              </div>
+              <br><br><br><br>
+              <div class="inosuke">
+                <h3 id="Titulozenitsu">Zenitsu</h3>
+                <div class="row">
+
+                  <div class="col-9 align-self-center">
+                    <p>
+                      Zenitsu es un adolescente de piel clara que tiene el pelo corto, que antiguamente era de color
+                      negro, pero tras un accidente durante su entrenamiento cuando fue golpeado por un rayo, su pelo
+                      sufre una decoloración al volverse rubio con algunas extensiones de color naranja.
+                    </p>
+                    <h5>Personlidad</h5>
+                    <p>
+                      Por naturaleza, Zenitsu es cobarde. Siempre afirma que no tiene mucho tiempo de vida debido al
+                      peligroso trabajo de ser un Cazador de demonios. También es un poco mujeriego y le gusta flirtear
+                      con las chicas que él piensa que son lindas y les pide que se casen con él para su molestia.
+
+                      Zenitsu tiene baja autoestima, pero aún quiere cumplir con las expectativas que otros le
+                      establecieron. Sin embargo, tenía miedo constantemente y siempre lloraba y huía. Afirma que quiere
+                      vivir una vida modesta donde pueda ser útil para alguien.
+
+                      A pesar de toda su falta de estima, Zenitsu tiene un gran respeto y admiración hacia sus camaradas
+                      y su maestro fallecido, Jigoro Kuwajima. Su concentración y empuje para vengarlo lo ayudaron a
+                      superar su cobardía y sus dudas.
+                    </p>
+                    <h5>Habilidades</h5>
+                    <p>el sentido del oído de Zenitsu es lo suficientemente agudo como para escuchar hasta la más lejana
+                      vibración sonora en su alrededor. Conforme más pasa el tiempo, la audición de Zenitsu le permite
+                      incluso escuchar los pensamientos más ocultos de la persona.</p>
+
+                    <p>
+                      La respiración del Rayo,Enseñado a Zenitsu por un ex Pilar, Jigoro Kuwajima (su Maestro). Esta
+                      técnica aumenta la fuerza y ​​la agilidad del usuario para igualar a la de un Demonio. Hay un
+                      total de seis posturas diferentes dentro de la respiración del rayo, pero Zenitsu no tenía tanto
+                      talento ya que solo pudo aprender el primero de los seis estilos, que se dice es el más básico.
+                      Sin embargo, Zenitsu ha logrado desarrollar una séptima postura por sí mismo en base a un
+                      entrenamiento dedicado para poder derrotar a su condiscípulo, Kaigaku.
+                    </p>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="col-3">
+                    <img src="img/zenitsu.png" alt="zenitsu" class="img-fluid" id="fotozenitsu">
+                  </div>
+                </div>
+
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+
+
+    </section>
+
+
+
+  </main>
+
+  
+
+  <footer>
+    <div class="row" id="rowfooter">
+
+      <div class="col-5" id="DP">
+
+        <h5>Datos Personales</h5>
+        <p>Nombre: Andres David Orozco Manrique.</p>
+
+        <p>correo: andaoro1@gmail.com</p>
+        <p>Desarrolador web</p>
+      </div>
+
+      <div class="col-3">
+
+        <h5>Contactanos</h5>
+        <p><a href="https://www.facebook.com/profile.php?id=100013394560683" target="_blank">Facebook</a></p>
+        <p><a href="https://github.com/andaoro" target="_blank">Github</a></p>
+        <p>Telefono: 3012574242</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
 </body>
 
 

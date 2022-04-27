@@ -5,16 +5,16 @@ export function llenartienda(evento){
      //crear 10 productos
      let productos=
      [
-          {foto: 'img/articulos/tanjirof.jpg', nombre:"Figura Tanjiro",precio:"$"+80000,descripcion:"Figura de 20cms del personaje Kamado tanjiro."},
-          {foto: 'img/articulos/zenitsuf.jpg', nombre:"Figura Zenitsu",precio:"$"+80000,descripcion:"Figura de 20 cms basado en el personaje Zenitsu agatsuma."},
-          {foto: 'img/articulos/nezukof.jpg', nombre:"Figura Nezuko ",precio:"$"+80000,descripcion:"Figura de 20cms basada en el personaje Kamado Nezuko."},
-          {foto: 'img/articulos/cartuchera.jpg', nombre:"Cartuchera",precio:"$"+30000,descripcion:"Cartuchera Grande kimetsu No yaiba."},
-          {foto: 'img/articulos/billetera.jpg', nombre:"Billeteras",precio:"$"+25000,descripcion:"Billetera Zenitsu Kimetsu No yaiba."},
-          {foto: 'img/articulos/accesorios.jpg', nombre:"Accesorios",precio:"$"+20000,descripcion:"Caja de Accesorios Variados Kimetsu No yaiba."},
-          {foto: 'img/articulos/zenitsufunko.jpg', nombre:"Funko Pop Zenitsu",precio:"$"+70000,descripcion:"Funko pop zenitsu agamatsu Original."},
-          {foto: 'img/articulos/inosukefunko.jpg', nombre:"Funko Pop Inosuke ",precio:"$"+70000,descripcion:"Funko pop Inosuke Hashibara Original."},
-          {foto: 'img/articulos/medias.jpg', nombre:"Medias",precio:"$"+7000,descripcion:"Medias Inosuke Hashibara Kimetsu No yaiba."},
-          {foto: 'img/articulos/uzui.jpg', nombre:"Figura Tengen Uzui",precio:"$"+75000,descripcion:"Figura de Tengen Uzui pilar del sonido."},
+          {foto: 'img/articulos/tanjirof.jpg', nombre:"Figura Tanjiro",precio:80000,descripcion:"Figura de 20cms del personaje Kamado tanjiro."},
+          {foto: 'img/articulos/zenitsuf.jpg', nombre:"Figura Zenitsu",precio:80000,descripcion:"Figura de 20 cms basado en el personaje Zenitsu agatsuma."},
+          {foto: 'img/articulos/nezukof.jpg', nombre:"Figura Nezuko ",precio:80000,descripcion:"Figura de 20cms basada en el personaje Kamado Nezuko."},
+          {foto: 'img/articulos/cartuchera.jpg', nombre:"Cartuchera",precio:30000,descripcion:"Cartuchera Grande kimetsu No yaiba."},
+          {foto: 'img/articulos/billetera.jpg', nombre:"Billeteras",precio:25000,descripcion:"Billetera Zenitsu Kimetsu No yaiba."},
+          {foto: 'img/articulos/accesorios.jpg', nombre:"Accesorios",precio:20000,descripcion:"Caja de Accesorios Variados Kimetsu No yaiba."},
+          {foto: 'img/articulos/zenitsufunko.jpg', nombre:"Funko Pop Zenitsu",precio:70000,descripcion:"Funko pop zenitsu agamatsu Original."},
+          {foto: 'img/articulos/inosukefunko.jpg', nombre:"Funko Pop Inosuke ",precio:70000,descripcion:"Funko pop Inosuke Hashibara Original."},
+          {foto: 'img/articulos/medias.jpg', nombre:"Medias",precio:7000,descripcion:"Medias Inosuke Hashibara Kimetsu No yaiba."},
+          {foto: 'img/articulos/uzui.jpg', nombre:"Figura Tengen Uzui",precio:75000,descripcion:"Figura de Tengen Uzui pilar del sonido."},
      
      ]
      //1. creo una variable para almacenar la base para pintar
@@ -50,7 +50,7 @@ export function llenartienda(evento){
           precio.classList.add("text-center")
           precio.classList.add("text-warning")
           precio.classList.add("number")
-          precio.textContent=producto.precio
+          precio.textContent="$"+producto.precio+"COP"
      
           let comprar = document.createElement("button")
           comprar.classList.add("bg-success")

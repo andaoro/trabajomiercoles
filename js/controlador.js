@@ -24,6 +24,7 @@ contenedorTienda.addEventListener("click",function(evento){
     }
 })
 
+
 //rutina añadir carrito
 let carrito=[]
 let anadir=document.getElementById("anadirc")
@@ -36,6 +37,13 @@ anadir.addEventListener("click",function(){
     
     producto.cantidad=cantidad
 
+    let precio=(producto.precio.split("$")[1].split("COP")[0])
+    console.log(precio)
+    producto.subtotal=cantidad*Number(precio)
+   
+
+    
+
 
     //agrego producto al carrito
     carrito.push(producto)
@@ -43,7 +51,7 @@ anadir.addEventListener("click",function(){
     
     //pintar la capsula en el carrito
     carrito.forEach(function(producto){
-        suma=suma+Number(producto.cantidad)
+        suma=suma+Number(producto.cantidad)   
     })
     
     let capsula=document.getElementById("pildora")
@@ -55,8 +63,11 @@ anadir.addEventListener("click",function(){
     console.log(carrito)
 
     modalinfo.hide()
+
     
 })
+
+    
 
 
 
@@ -81,33 +92,94 @@ botonvercarrito.addEventListener("click",function(){
     base.innerHTML=""
 
     carrito.forEach(function(producto){
+
+
         let fila=document.createElement("div")
         fila.classList.add("row")
 
         let columna1=document.createElement("div")
         columna1.classList.add("col-4")
+
+        let columna2=document.createElement("div")
+        columna2.classList.add("col-8")
+       
         
         let precio=document.createElement("p")
         precio.classList.add("text-warning")
         precio.textContent=producto.precio
 
-        let columna2=document.createElement("div")
-        columna2.classList.add("col-8")
+        
 
         let foto = document.createElement("img")
         foto.classList.add("w-100", "img-fluid")
         foto.src=producto.foto
+
+        let nombre=document.createElement("p")
+        nombre.classList.add("text-light")
+        nombre.textContent=producto.titulo
+
+        let subt=document.createElement("p")
+        subt.classList.add("text-light")
+        
+        
+        subt.textContent="Subtotal : "+producto.subtotal
+        
+        let fila2=document.createElement("div")
+        fila2.classList.add("row")
+
+        
+
+        
+
+        let total=document.createElement("p")
+        total.classList.add("text-light")
+
+
+        let cant=document.createElement("p")
+        cant.classList.add("text-light")
+        cant.textContent="cantidad : "+producto.cantidad
+
+        
+        
 
         
 
         //padres e hijos
 
         columna1.appendChild(foto)
+        columna2.appendChild(nombre)
         columna2.appendChild(precio)
+        columna2.appendChild(cant)
+        columna2.appendChild(subt)
+        
+        
         fila.appendChild(columna1)
         fila.appendChild(columna2)
-       
+
+        
+        
+        
+
         base.appendChild(fila)
+    })
+
+
+    carrito.forEach(function(producto){
+        let fila3=document.createElement("div")
+        fila3.classList.add("row")
+
+        let columna=document.createElement("div")
+        columna.classList.add("col-6")
+
+        let total=document.createElement("h5")
+        
+        total.textContent="total: " +Number(producto.total)
+
+
+        columna.appendChild(total)
+
+        fila3.appendChild(columna)
+        base.appendChild(fila3)
     })
     
     
