@@ -1,0 +1,18 @@
+.container{
+    margin-left: 33%;
+    margin-top: 200px;
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    background-color: azure;
+}
+
+body{
+    background-image: url("/img/register.jpg");
+    background-size: cover;
+}
+
+input{
+    border: 1px solid black;
+}
+

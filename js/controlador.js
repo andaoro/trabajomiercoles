@@ -163,24 +163,9 @@ botonvercarrito.addEventListener("click",function(){
         base.appendChild(fila)
     })
 
+    
 
-    carrito.forEach(function(producto){
-        let fila3=document.createElement("div")
-        fila3.classList.add("row")
-
-        let columna=document.createElement("div")
-        columna.classList.add("col-6")
-
-        let total=document.createElement("h5")
-        
-        total.textContent="total: " +Number(producto.total)
-
-
-        columna.appendChild(total)
-
-        fila3.appendChild(columna)
-        base.appendChild(fila3)
-    })
+    
     
     
     modalcompra.show()
