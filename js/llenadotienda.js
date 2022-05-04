@@ -50,7 +50,7 @@ export function llenartienda(evento){
           precio.classList.add("text-center")
           precio.classList.add("text-warning")
           precio.classList.add("number")
-          precio.textContent="$"+producto.precio+"COP"
+          precio.textContent=producto.precio
      
           let comprar = document.createElement("button")
           comprar.classList.add("bg-success")

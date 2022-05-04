@@ -1,174 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/tienda.css">
-    
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/tienda.css">
+
 
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__bounceInLeft">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="10%"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html" id="inicio">inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www3.animeflv.net/anime/kimetsu-no-yaiba" target="_blank">Ver Ahora</a>
-                  </li>
-                  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__bounceInLeft">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="10%"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tienda
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
-                      <li><a class="dropdown-item" href="tienda.html">Compra</a></li>
-                     
-                                 
-                    </ul>
-
-                  </li>
-                 
-                  <li class="nav-item" id="carrito">
-                    <a href="#"><i class="bi bi-cart3" id="vcarrito"></i>
-                      <span class="position-absolute top-10 start-1z0 translate-middle badge rounded-pill bg-danger invisible" id="pildora">
-                        99+
-                        
-                      </span>
-                    </a>
-                  </li>
-                  
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  
-                </form>
-              </div>
-            </div>
-          </nav>
-    </header>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" id="inicio">inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www3.animeflv.net/anime/kimetsu-no-yaiba" target="_blank">Ver Ahora</a>
+            </li>
 
 
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tienda
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="tienda.html">Compra</a></li>
 
-    <main>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-5 g-4" id="filas">
-              
-            </div>
+
+              </ul>
+
+            </li>
+
+            <li class="nav-item" id="carrito">
+              <a href="#"><i class="bi bi-cart3" id="vcarrito"></i>
+                <span class="position-absolute top-10 start-1z0 translate-middle badge rounded-pill bg-danger invisible"
+                  id="pildora">
+                  99+
+
+                </span>
+              </a>
+            </li>
+
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+
+          </form>
         </div>
+      </div>
+    </nav>
+  </header>
 
 
-    </main>
 
-    <section>
-      <!-- Modal -->
-      <div class="modal fade"  id="modalinfor">
-        <div class="modal-dialog">
-          <div class="modal-content bg-dark">
-            <div class="modal-header">
-              <h5 class="modal-title">Tienda Kimetu</h5>
-              <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close" ></button>
-            </div>
-            <div class="modal-body">
+  <main>
+    <br>
 
-              <div class="container">
-                <div class="row">
-                  <div class="col-4">
-                      <img src="" alt="" class="w-100 img-fluid" id="fotoinfo">
-                  </div>
-                  <div class="col-8">
-                    <h4 id="nombreinfo"></h4>
-                    <h5 id="precioinfo"></h5>
-                    <p id="descripcioninfo"></p>
-                    <div class="mb-3">
-                      <label class="form-label">Cantidad</label>
-                      
-                      <input type="number" class="form-control" id="cantproducto" min="1" max="10" value="1" aria-valuenow="1" >
-                    </div>
+    <div class="container">
+
+
+      <div class="row row-cols-1 row-cols-md-5 g-4" id="filas">
+
+      </div>
+    </div>
+
+
+  </main>
+
+  <section>
+    <!-- Modal -->
+    <div class="modal fade" id="modalinfor">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title">Tienda Kimetu</h5>
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-4">
+                  <img src="" alt="" class="w-100 img-fluid" id="fotoinfo">
+                </div>
+                <div class="col-8">
+                  <h4 id="nombreinfo"></h4>
+                  <h5 id="precioinfo"></h5>
+                  <p id="descripcioninfo"></p>
+                  <div class="mb-3">
+                    <label class="form-label">Cantidad</label>
+
+                    <input type="number" class="form-control" id="cantproducto" min="1" max="10" value="1"
+                      aria-valuenow="1">
                   </div>
                 </div>
               </div>
-
             </div>
 
-            <div class="modal-footer">
-              
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary" id="anadirc">Añadir al carrito</button>
-            </div>
+          </div>
+
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" id="anadirc">Añadir al carrito</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-    
-      <!-- Modal -->
-      <div class="modal fade" id="resumencompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-        <div class="modal-dialog">
-          <div class="modal-content bg-dark">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Tienda Kimetsu</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container" id="basecarro">
+  <section>
 
-              </div>
-            </div>
-            <div class="modal-footer">
-              <h5 id="total"></h5>
+    <!-- Modal -->
+    <div class="modal fade" id="resumencompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tienda Kimetsu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" id="basecarro">
 
-              <button type="button" class="btn btn-danger" id="limpiarc">Limpiar el carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Comprar</button>
             </div>
+            <p id="totalp"></p>
+            <button type="button" class="btn btn-success" id="usd">Precio en USD</button>
+            <button type="button" class="btn btn-warning" id="cop">Precio en COP</button>
+          </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-danger" id="limpiarc">Limpiar el carrito</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Comprar</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <div class="row" id="rowfooter">
-        
-        <div class="col-5" id="DP">
-          
-            <h5>Datos Personales</h5>
-            <p>Nombre: Andres David Orozco Manrique.</p>
-            
-            <p>correo: andaoro1@gmail.com</p>
-            <p>Desarrolador web</p>         
-        </div>
-    
-        <div class="col-3">
-         
-            <h5>Contactanos</h5>
-            <p><a href="https://www.facebook.com/profile.php?id=100013394560683" target="_blank" >Facebook</a></p>
-            <p><a href="https://github.com/andaoro" target="_blank">Github</a></p>
-            <p>Telefono: 3012574242</p>
-        </div>
+  <footer>
+    <div class="row" id="rowfooter">
+
+      <div class="col-5" id="DP">
+
+        <h5>Datos Personales</h5>
+        <p>Nombre: Andres David Orozco Manrique.</p>
+
+        <p>correo: andaoro1@gmail.com</p>
+        <p>Desarrolador web</p>
       </div>
-    
-    </footer>
+
+      <div class="col-3">
+
+        <h5>Contactanos</h5>
+        <p><a href="https://www.facebook.com/profile.php?id=100013394560683" target="_blank">Facebook</a></p>
+        <p><a href="https://github.com/andaoro" target="_blank">Github</a></p>
+        <p>Telefono: 3012574242</p>
+      </div>
+    </div>
+
+  </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="js/controlador.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="js/controlador.js" type="module"></script>
 </body>
 
 
